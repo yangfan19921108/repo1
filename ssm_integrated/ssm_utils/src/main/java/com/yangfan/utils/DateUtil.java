@@ -16,12 +16,12 @@ import java.util.Date;
  */
 public class DateUtil {
     public static Date stringtoDate(String a) throws ParseException {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = format.parse(a);
         return date;
     }
     public static String datetoString(Date b) throws ParseException {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String s = format.format(b);
         return s;
     }
